@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Mouhaens22.github.io/React_firebase_chat_application/static/css/main.651024ed.css",
+    "main.js": "/Mouhaens22.github.io/React_firebase_chat_application/static/js/main.de66af1d.js",
+    "static/media/logo.png": "/Mouhaens22.github.io/React_firebase_chat_application/static/media/logo.20a28b9d49bb69bea9ec.png",
+    "index.html": "/Mouhaens22.github.io/React_firebase_chat_application/index.html",
+    "main.651024ed.css.map": "/Mouhaens22.github.io/React_firebase_chat_application/static/css/main.651024ed.css.map",
+    "main.de66af1d.js.map": "/Mouhaens22.github.io/React_firebase_chat_application/static/js/main.de66af1d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.651024ed.css",
+    "static/js/main.de66af1d.js"
+  ]
+}
