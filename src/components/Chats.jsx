@@ -37,7 +37,7 @@ const Chats = () => {
 
   return (
     <div className="chats">
-     { Object.entries(chats)?.map((chat) => ( 
+     { chats && Object.entries(chats)?.map((chat) => ( 
       <div
         className="userChat"
         onClick={() => selectHandle(chat[1].userInfo)}
