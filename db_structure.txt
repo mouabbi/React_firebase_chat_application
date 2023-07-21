@@ -1,0 +1,48 @@
+1- USERS :
+users : [
+   id: {
+        uid:  id ,
+        name : ----,
+        email : ----,
+        photoURL : ----
+    },
+    id':{...}, 
+    ....
+]
+
+
+2- USERCHATS :
+userchats :[
+    uid1 :{
+        combinedId1 : {
+            userInfo :{ uid : otherid, name: other user name , photo : other ... },
+            date : ---- 
+        },
+        combinedId2 : {
+            userInfo :{ uid : otherid, name: other user name , photo : other ... },
+            date : ---- 
+        }
+    },
+
+    uid2 :{
+        combinedId1 : {
+            userInfo:{}, date : --- 
+        },
+        combinedId1 : {
+            userInfo:{}, date : --- 
+        }
+    }
+]
+
+
+
+3-CHATS :
+
+chats :[
+    combinedId1:{
+        messages :{}
+    },
+    combinedId1:{
+        messages :{}
+    }
+]

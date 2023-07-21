@@ -1,14 +1,14 @@
+import React, {  useEffect, useState } from "react";
 import { doc, onSnapshot } from "firebase/firestore";
-import React, { useContext, useEffect, useState } from "react";
+import { db } from "../firebase";
 import { AuthContext } from "../context/AuthContext";
 import { ChatContext } from "../context/ChatContext";
-import { db } from "../firebase";
+
 
 const Chats = () => {
   const [chats, setChats] = useState([]);
-
-  const { currentUser } = useContext(AuthContext);
-  const { dispatch } = useContext(ChatContext);
+  const currentUser = React.useContext(AuthContext);
+  const chatContext = React.useContext(ChatContext);
 
   useEffect(() => {
     const getChats = () => {
@@ -24,25 +24,32 @@ const Chats = () => {
     currentUser.uid && getChats();
   }, [currentUser.uid]);
 
-  const handleSelect = (u) => {
-    dispatch({ type: "CHANGE_USER", payload: u });
-  };
+
+  const selectHandle=(u)=>{
+    let action ={
+      type:"CHANGE_USER",
+      payload:u
+    }
+    chatContext.dispatch(action);
+    console.log("user selected");
+    console.log("actual user :"+chatContext.data.user.name)
+  }
 
   return (
     <div className="chats">
-      {Object.entries(chats)?.sort((a,b)=>b[1].date - a[1].date).map((chat) => (
-        <div
-          className="userChat"
-          key={chat[0]}
-          onClick={() => handleSelect(chat[1].userInfo)}
-        >
-          <img src={chat[1].userInfo.photoURL} alt="" />
-          <div className="userChatInfo">
-            <span>{chat[1].userInfo.displayName}</span>
-            <p>{chat[1].lastMessage?.text}</p>
-          </div>
+     { Object.entries(chats)?.map((chat) => ( 
+      <div
+        className="userChat"
+        onClick={() => selectHandle(chat[1].userInfo)}
+        key={chat[0]}
+      >
+        <img src={chat[1].userInfo.photoURL} alt="" />
+        <div className="userChatInfo">
+          <span>{chat[1].userInfo.name}</span>
+          <p>{chat[1].lastMessage?.text}</p>
         </div>
-      ))}
+      </div>
+     ))}
     </div>
   );
 };

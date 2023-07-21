@@ -15,7 +15,7 @@
 }
 
 .formContainer {
-  background-color: #a7bcff;
+  background-color: rgba(247, 186, 186, 0.38);
   height: 100vh;
   display: flex;
   align-items: center;
@@ -31,14 +31,14 @@
     align-items: center;
 
     .logo {
-      color: #5d5b8d;
+      color: #bf4242;
       font-weight: bold;
       font-size: 24px;
 
     }
 
     .title {
-      color: #5d5b8d;
+      color: #805151;
       font-size: 12px;
     }
 
@@ -51,14 +51,14 @@
         padding: 15px;
         border: none;
         width: 250px;
-        border-bottom: 1px solid #a7bcff;
+        border-bottom: 1px solid rgba(247, 186, 186, 0.58);
         &::placeholder {
           color: rgb(175, 175, 175);
         }
       }
 
       button {
-        background-color: #7b96ec;
+        background-color: #f16a6a;
         color: white;
         padding: 10px;
         font-weight: bold;
@@ -80,7 +80,7 @@
       }
     }
     p {
-      color: #5d5b8d;
+      color: #805151;
       font-size: 12px;
       margin-top: 10px;
     }
@@ -88,7 +88,7 @@
 }
 
 .home {
-  background-color: #a7bcff;
+  background-color: rgba(247, 186, 186, 0.58);
   height: 100vh;
   display: flex;
   align-items: center;
@@ -107,20 +107,21 @@
 
     .sidebar {
       flex: 1;
-      background-color: #3e3c61;
+      background-color: #a45e5e;
       position: relative;
 
       .navbar {
         display: flex;
         align-items: center;
-        background-color: #2f2d52;
+        background-color: #4d2525;
         height: 50px;
         padding: 10px;
         justify-content: space-between;
-        color: #ddddf7;
+        color: rgba(247, 186, 186, 0.38);
 
         .logo {
           font-weight: bold;
+          color: #fff;
           @include tablet {
             display: none;
           }
@@ -131,7 +132,7 @@
           gap: 10px;
 
           img {
-            background-color: #ddddf7;
+            background-color: rgba(247, 186, 186, 0.38);
             height: 24px;
             width: 24px;
             border-radius: 50%;
@@ -139,8 +140,8 @@
           }
 
           button {
-            background-color: #5d5b8d;
-            color: #ddddf7;
+            background-color: #805151;
+            color: rgb(253, 250, 250);
             font-size: 10px;
             border: none;
             cursor: pointer;
@@ -164,7 +165,7 @@
             outline: none;
 
             &::placeholder {
-              color: lightgray;
+              color: #f3efef;
             }
           }
         }
@@ -206,7 +207,7 @@
 
       .chatInfo {
         height: 50px;
-        background-color: #5d5b8d;
+        background-color: #4d2525db;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -225,7 +226,7 @@
       }
 
       .messages {
-        background-color: #ddddf7;
+        background-color: rgba(253, 237, 237, 0.74);
         padding: 10px;
         height: calc(100% - 160px);
         overflow: scroll;
@@ -272,7 +273,7 @@
             .messageContent {
               align-items: flex-end;
               p {
-                background-color: #8da4f1;
+                background-color: #a48282;
                 color: white;
                 border-radius: 10px 0px 10px 10px;
               }
