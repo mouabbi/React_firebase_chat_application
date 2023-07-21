@@ -20,9 +20,9 @@ function App() {
   }
 
   return (
-    <BrowserRouter basename={window.location.pathname || ''}>
+    <BrowserRouter >
     <Routes>
-      <Route exact path="/" >
+      <Route  path="/" >
         <Route index element={
             <ProtectedRoute>
               <Home/>
