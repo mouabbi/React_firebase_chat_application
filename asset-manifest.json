@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/React_firebase_chat_application/static/css/main.651024ed.css",
-    "main.js": "/React_firebase_chat_application/static/js/main.4137da9b.js",
+    "main.js": "/React_firebase_chat_application/static/js/main.36bc53cc.js",
     "static/media/logo.png": "/React_firebase_chat_application/static/media/logo.20a28b9d49bb69bea9ec.png",
     "index.html": "/React_firebase_chat_application/index.html",
     "main.651024ed.css.map": "/React_firebase_chat_application/static/css/main.651024ed.css.map",
-    "main.4137da9b.js.map": "/React_firebase_chat_application/static/js/main.4137da9b.js.map"
+    "main.36bc53cc.js.map": "/React_firebase_chat_application/static/js/main.36bc53cc.js.map"
   },
   "entrypoints": [
     "static/css/main.651024ed.css",
-    "static/js/main.4137da9b.js"
+    "static/js/main.36bc53cc.js"
   ]
 }
